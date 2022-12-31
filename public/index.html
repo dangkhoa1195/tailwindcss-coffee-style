@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a9b50ecdfc8_favicon%202.jpg"
+      type="image/x-icon"
+    />
     <link href="./output.css" rel="stylesheet" />
-    <title>Document</title>
+    <script src="./main.js" async></script>
+    <title>CoffeeStyle</title>
   </head>
   <body>
     <div id="root">
       <div
-        class="content-wrapper mx-auto max-w-screen-2xl bg-slate-200 px-8 text-base"
+        class="content-wrapper mx-auto max-w-screen-2xl bg-slate-200 px-8 font-Karla text-base"
       >
-        <header id="header" class="mx-10 py-6">
-          <nav class="flex flex-row items-center justify-between">
+        <header id="header" class="mx-auto p-6">
+          <nav class="relative flex flex-row items-center justify-between">
             <div
               class="logo basis-2/6 cursor-pointer text-center text-xl font-semibold"
             >
               CoffeeStyle.
             </div>
             <ul
-              class="flex basis-3/6 items-center justify-end gap-8 text-sm font-medium uppercase text-gray-500"
+              class="hidden basis-3/6 text-sm font-medium uppercase text-gray-500 lg:flex lg:items-center lg:justify-end lg:gap-8"
+              id="top-menu"
             >
-              <li class="ct-top-menu-item">
+              <li class="ct-top-menu-item ct-top-menu-item-active">
                 <a href="#" class="">Home</a>
               </li>
               <li class="ct-top-menu-item">
@@ -32,11 +39,11 @@
               <li class="ct-top-menu-item"><a href="#" class="">About</a></li>
               <li class="ct-top-menu-item"><a href="#" class="">Contact</a></li>
               <li class="ct-top-menu-item">
-                <a href="#" class="">Style guide</a>
+                <a href="#" class="">Styleguide</a>
               </li>
             </ul>
             <ul
-              class="ml-16 flex basis-1/6 items-center justify-start text-sm font-medium uppercase text-gray-500"
+              class="lg:basic-1/6 flex basis-3/6 items-center justify-end text-sm font-medium uppercase text-gray-500 lg:justify-center"
             >
               <li class="ct-top-menu-item">
                 <a href="#" class="flex items-center"
@@ -61,6 +68,25 @@
                 >
               </li>
             </ul>
+            <div
+              class="flex basis-1/6 cursor-pointer items-center px-3 sm:px-8 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="ct-icon"
+                id="toggle-top-menu"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </nav>
         </header>
         <main id="main">
