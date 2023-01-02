@@ -5,7 +5,7 @@
 
 /* ct = custom */
 .ct-top-menu-item {
-  @apply relative cursor-pointer py-1 hover:text-gray-800 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:h-0.5 after:lg:w-0 after:lg:bg-light-coffee after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out hover:after:lg:w-full;
+  @apply relative cursor-pointer py-1 hover:text-gray-800 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:h-0.5 after:lg:w-0 after:lg:bg-coffee-200 after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out hover:after:lg:w-full;
 }
 .ct-top-menu-item-active {
   @apply text-gray-800;
@@ -18,4 +18,13 @@
 }
 .ct-top-menu-expanded {
   @apply absolute top-10 z-50 w-full animate-slideDown bg-white text-center;
+}
+.ct-sub-heading {
+  @apply mb-24 flex items-center justify-center;
+}
+.ct-sub-heading-deco-line {
+  @apply h-px w-8 bg-gray-200;
+}
+.ct-sub-heading-label {
+  @apply mx-4 text-center text-xs font-medium uppercase tracking-widest text-gray-500;
 }
