@@ -28,3 +28,6 @@
 .ct-sub-heading-label {
   @apply mx-4 text-center text-xs font-medium uppercase tracking-widest text-gray-500;
 }
+.ct-button {
+  @apply cursor-pointer  py-4 px-8 text-center text-sm font-semibold uppercase tracking-wider  hover:bg-opacity-90;
+}
